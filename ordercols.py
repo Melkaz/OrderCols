@@ -1,5 +1,24 @@
-#!/usr/bin/env bash
+#!/usr/bin/env python
+import sys
+import os
 
-sequence=$(cat $1)
-target_file=$2
+seq_file = sys.argv[1]
+input_file = sys.argv[2]
 
+
+
+with open(input_file, 'r') as content_file:
+    content = content_file.read().search(".*")
+
+
+sequence = open(pheno_file, 'r')
+
+chunk="'{print NF}'"
+
+awk $chunk $input_file
+
+exit
+# echo $sequence
+awk -v sequence="sequence" '{print $sequence}' $input_file
+
+for []

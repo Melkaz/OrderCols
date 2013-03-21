@@ -1,4 +1,23 @@
 OrderCols
 =========
 
-Script to order columns by the first line column names with a given list
+Orders columns of a file from a given list of column names.
+
+Usage
+====
+
+`sh ordercols.sh list_file input_file`
+
+Example
+====
+
+`sh ordercols.sh list1.txt demo1.txt [Separator]`
+
+Options
+====
+
+Separator
+===
+
+By default the separator is "\t"
+Example : `sh ordercols.sh list2.txt demo2.txt ";"`

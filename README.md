@@ -3,6 +3,8 @@ OrderCols
 
 Orders columns of a file from a given list of column names.
 
+This script is designed to work on large files and has been tested with 5M rows and 100 columns (~ 2 minutes).
+
 Usage
 -----
 

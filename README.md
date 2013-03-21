@@ -6,14 +6,15 @@ Orders columns of a file from a given list of column names.
 Usage
 -----
 
-`sh ordercols.sh list_file input_file [Separator]`
+```shell
+sh ordercols.sh list_file input_file [Separator]```
 
 Example
 -----
 
 ### List file
 
-`A       B       C       D       E`
+```A       B       C       D       E```
 
 This is the order you want to get from your input file.
 

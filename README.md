@@ -7,14 +7,15 @@ Usage
 -----
 
 ```shell
-sh ordercols.sh list_file input_file [Separator]```
+sh ordercols.sh list_file input_file [Separator]
+```
 
 Example
 -----
 
 ### List file
 
-```A       B       C       D       E```
+`A       B       C       D       E`
 
 This is the order you want to get from your input file.
 

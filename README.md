@@ -29,7 +29,7 @@ The column names must match those in the list file.
 
 ### Calling
 
-`sh ordercols.sh list1.txt demo1.txt`
+`sh ordercols.sh list1.txt input1.txt`
 
 Here, we don't need to specify the separator, as the default one is "\t".
 
@@ -46,7 +46,7 @@ Options
 By default the separator is "\t".
 
 But you can specify your own separator, like this :
-`sh ordercols.sh list2.txt demo2.txt ";"`
+`sh ordercols.sh list2.txt input2.txt ";"`
 
 What it does
 =====

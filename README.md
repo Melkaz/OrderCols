@@ -20,4 +20,6 @@ Separator
 ===
 
 By default the separator is "\t"
-Example : `sh ordercols.sh list2.txt demo2.txt ";"`
+
+But you can specify your own separator, like this :
+`sh ordercols.sh list2.txt demo2.txt ";"`

@@ -1,6 +1,6 @@
 
 if [ $# -lt 2 ] || [ $# -gt 3 ]; then
-  echo "Usage: sh $0 list_colnames file"
+  echo "Usage: ordercols list_colnames file"
   exit
 fi
 
@@ -31,7 +31,7 @@ do
 	# We grep on the header where are the column names
 	# First grep is finding a match with the current element of the list and all the characters before
 	# Second grep is counting tabulations if present or the own column name (if in first position)
-	position=$(head -n1 $input_file | grep -P -w -o ".*$colname" | grep -P -o -w "$colname|$separator" | wc -l)
+	position=$(head -n1 $input_file | grep -P -sw -o ".*$separator$colname|^$colname" | grep -P -o -sw "$colname|$separator" | wc -l)
 
 	# If we have a zero, it means that the column name in the list does not exist in the input file
 	if [ "$position" == 0 ]
